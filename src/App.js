@@ -1,7 +1,8 @@
 //import './App.css'; // Using tailwind -- App.css not included
 // React components
 import React, { useRef, useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
+import ReactDOM from 'react-dom/client'
+import Content from './pages/Content';
 
 // Firebase (v9 modular)
 import { initializeApp } from 'firebase/app';
@@ -22,15 +23,10 @@ const firebaseApp = initializeApp(firebaseConfig);
 const analytics = getAnalytics(firebaseApp);
 const db = getFirestore(firebaseApp);
 
-
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div className="flex flex-col items-center mt-16">
-        <h1 className="text-4xl text-center">Tailwind CSS makes styling React components easier!</h1>
-        <button className="bg-black text-white p-2.5 w-fit mt-9">Get Started</button>
-      </div>
+    <div className="bg-zinc-800 text-slate-100 h-screen">
+      <Content />
     </div>
   );
 }
