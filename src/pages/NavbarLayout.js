@@ -6,6 +6,7 @@ const NavbarLayout = () => {
             <nav className="flex sm:justify-center space-x-4 bg-zinc-800 mb-4 border-b border-zinc-700/50">
                 {[
                     ["Home", "/"],
+                    ["About", "/about"],
                     ["Blogs", "/blogs"],
                     ["Contact", "/contact"],
                 ].map(([title, url]) => (
@@ -15,7 +16,7 @@ const NavbarLayout = () => {
                 ))}
             </nav>
 
-            <Outlet />
+            <Outlet /> 
         </>
     )
 
