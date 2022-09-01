@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center min-h-screen">
             <h1 className="text-3xl text-center font-semibold">About</h1>
             <ul className="py-3">
                 <li>

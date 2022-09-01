@@ -2,7 +2,7 @@ import UserForm from "./UserForm";
 
 const Home = () => {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center min-h-screen">
             <h1 className="text-4xl text-center font-semibold">Chase Knowland</h1>
             <div className="p-3">
                 <UserForm />

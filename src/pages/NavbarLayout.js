@@ -1,4 +1,5 @@
 import { Outlet, Link } from 'react-router-dom';
+import Footer from './Footer.js';
 
 const NavbarLayout = () => {
     return (
@@ -17,6 +18,8 @@ const NavbarLayout = () => {
             </nav>
 
             <Outlet /> 
+
+            <Footer />
         </>
     )
 

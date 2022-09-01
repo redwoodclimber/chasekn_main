@@ -25,7 +25,7 @@ const db = getFirestore(firebaseApp);
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-zinc-800 via-zinc-800 to-zinc-900 text-slate-100 h-screen">
+    <div className="bg-gradient-to-b from-zinc-800 via-zinc-800 to-zinc-900 text-slate-100 min-h-screen">
       <Content />
     </div>
   );
